@@ -18,3 +18,7 @@
             $(this).text($(this).text() == 'PRODUCT' ? 'Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.This iterative process allows for changes as business requirements eveolve.' : 'PRODUCT');
         });
     });
+//alert    
+    function myFunction() {
+        alert("Message recieved");
+      }

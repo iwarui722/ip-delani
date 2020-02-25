@@ -3,7 +3,7 @@
     color: white;
     padding: 280px;
     font-size: 30px;
-    background-image:url(/img/backgrounds/h_img.jpg);
+    background-image:url(../img/backgrounds/h_img.jpg);
 }
 .aboutus{
     text-align: center;
@@ -13,7 +13,7 @@
 }
 .services{
     text-align: center;
-    background-image: url(/img/backgrounds/s_image.jpg);
+    background-image: url(../img/backgrounds/s_image.jpg);
     padding: 30px;
     font-size: 15px;
     color: white;
@@ -23,14 +23,7 @@
     padding: 30px;
     font-size: 15px;
 }
-.column{
-    flex:33.33%;
-    padding:70px;
-    text-align: center;
-}
-.row{
-    display: flex;
-}
+
 .mystyle{
     width:100%;
     padding:25px;
@@ -53,7 +46,7 @@
     display: table;
   }
   .contact{
-      background-image: url(/img/backgrounds/c_image.jpg) ;
+      background-image: url(../img/backgrounds/c_image.jpg) ;
       text-align:center;
       padding: 210px;
       background-color: transparent;
@@ -81,49 +74,7 @@
     padding: 5px 10px;
     font-size: 14px;
 }
-.column2 {
-    position: flex;
-    width: 50%;
-  }
-  .column2 {
-    float: left;
-    width: 274px;
-    padding: 6px;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto ;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: tra;
-    overflow: hidden;
-    width: 280px;
-    height:0;
-    transition: .5s ease;
-  }
-  
-  .column2:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+
   .social{
       text-align: center;
       padding: 20px;
@@ -140,5 +91,66 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
   }
- 
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  /* Create 4 equal columns that sits next to each other */
+  .column {
+    flex: 20%;
+    padding: 5px;
+  }
+  .fader1 {
+    position: relative;
+    width: 20%;
+    flex:20%;
+    padding: 5px;
+  }
+  
+  .image {
+    display: block;
+    width: 20%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .fader1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
   
