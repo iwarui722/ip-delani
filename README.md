@@ -2,7 +2,7 @@
 # Delani Studios
 
 ## Individual Project
-- This is an individual project for week 3 and .
+- This is an individual project for week 3  .
 
 ## Getting Started
 - To get the code from github , initiate a pull to download the code.
