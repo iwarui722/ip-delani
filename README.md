@@ -2,7 +2,7 @@
 # Delani Studios
 
 ## Individual Project
-- This is an individual project for week three.
+- This is an individual project for week 3 and .
 
 ## Getting Started
 - To get the code from github , initiate a pull to download the code.
@@ -24,3 +24,5 @@ The software to install to run the code:
 ## Built with:
 - HTML.
 - CSS.
+- javascript
+- jquery
