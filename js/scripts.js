@@ -22,3 +22,11 @@
     function myFunction() {
         alert("Message recieved");
       }
+//code for hover jquery
+$(document).ready(function(){
+  $("p").hover(function(){
+    $(this).css("background-color", "blue");
+    }, function(){
+    $(this).css("background-color", "transparent");
+  });
+});
